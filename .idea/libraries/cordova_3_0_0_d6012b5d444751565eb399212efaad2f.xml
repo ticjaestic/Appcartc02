@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cordova-3.0.0-d6012b5d444751565eb399212efaad2f">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/platforms/android/bin/dexedLibs/cordova-3.0.0-d6012b5d444751565eb399212efaad2f.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
