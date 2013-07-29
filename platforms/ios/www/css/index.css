@@ -1,6 +1,7 @@
 *{margin: 0px;padding: 0px; text-decoration: none; color:black}
 h1{font-size: 100%; margin:0; padding:0px;}
 h2{font-size: 90%}
+h3{font-size: 80%}
 
 
 #recetas, #menus, #comprar{
@@ -58,3 +59,15 @@ article img{float: left;}
     -webkit-box-shadow: rgb(150,150,150) 5px 5px;
     box-shadow: rgb(150,150,150) 5px 5px 10px;
 }
+
+.article_menu, .article_fichamenu{
+	width: 100%;
+	height: auto;
+	padding-bottom: 2px;
+}
+.article_fichamenu h3{margin-left: 20px}
+#view_menus img, #view_fichamenus img{
+	float: right;
+	margin-top: -28px
+}
+.

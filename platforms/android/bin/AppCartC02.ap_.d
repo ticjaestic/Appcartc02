@@ -25,10 +25,12 @@
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/cordova.js \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/cordova_plugins.js \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/css \
+/Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/ficha_menus.html \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/ficha_recetas.html \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/img \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/index.html \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/js \
+/Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/menus.html \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/recetas.html \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/res \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/spec \
@@ -40,6 +42,7 @@
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/img/List.png \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/img/logo.png \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/img/pancontomate.jpg \
+/Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/img/Play.png \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/js/index.js \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/res/icon \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/res/screen \
