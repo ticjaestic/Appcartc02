@@ -23,32 +23,25 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>App Cart C01</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+        <title>App Cart C02</title>
     </head>
     <body>
-        <div class="app">
-            <header id="cabecera" >
-                <a href="index.html">
-                    <img src="img/Back.png" style="width: 30px"/>
-                    <h1>App Cart C02</h1>
-                </a>
-            </header>
-            <section id="view_recetas">
-                <a href="ficha_recetas.html">
-                <article>
-                    <figure>
-                        <img src="img/pancontomate.jpg" style="width: 100px"/>
-                    </figure>
-                    <hgroup>
-                        <h2>Pan con tomate</h2>
-                    </hgroup>
-                    <small>El pan con tomate o más conocido como Pantumaca, 
-                        es una receta popular de Cataluña.
-                    </small>
-                </article>
-                </a>
-            </section>
-        </div> 
+        <div data-role="header">
+			<h1>AppCart</h1>
+			<a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
+			<a href="#" data-back-btn-text="previous" class="ui-btn-left">Atrás</a>
+		</div>
+		<ul data-role="listview" data-count-theme="c">
+			<li><a href="alimentos.html">Varios <span class="ui-li-count">1</span></a></li>
+		    <li><a href="#">Pasta <span class="ui-li-count">12</span></a></li>
+		    <li><a href="#">Arroces <span class="ui-li-count">0</span></a></li>
+		    <li><a href="#">Verduras <span class="ui-li-count">4</span></a></li>
+		    <li><a href="#">Carnes <span class="ui-li-count">328</span></a></li>
+		    <li><a href="#">Pescados <span class="ui-li-count">62</span></a></li>
+		</ul>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

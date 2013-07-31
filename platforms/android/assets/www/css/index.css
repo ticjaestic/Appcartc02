@@ -1,4 +1,4 @@
-*{margin: 0px;padding: 0px; text-decoration: none; color:black}
+/**{margin: 0px;padding: 0px; text-decoration: none; color:black}
 h1{font-size: 100%; margin:0; padding:0px;}
 h2{font-size: 90%}
 h3{font-size: 80%}
@@ -70,4 +70,5 @@ article img{float: left;}
 	float: right;
 	margin-top: -28px
 }
-.
+*/
+
