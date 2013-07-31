@@ -21,6 +21,8 @@
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/bin/res/drawable-xhdpi/ic_launcher.png \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/bin/res/drawable-xhdpi/icon.png \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www \
+/Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/_index.html \
+/Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/alimentos.html \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/config.xml \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/cordova.js \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/cordova_plugins.js \
