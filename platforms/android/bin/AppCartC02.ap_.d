@@ -46,6 +46,7 @@
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/img/pancontomate.jpg \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/img/Play.png \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/js/index.js \
+/Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/js/knockout-2.3.0.js \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/res/icon \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/res/screen \
 /Applications/MAMP/htdocs/Cordova3/Appcartc02/platforms/android/assets/www/res/icon/android \
