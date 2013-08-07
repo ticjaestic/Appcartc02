@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<!-- Start of first page -->
+<!-- Página Inicio-->
 <div data-role="page" id="inicio">
 
 	<div data-role="header">
@@ -30,7 +30,7 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-<!-- Start of second page -->
+<!-- Página Familia de Alimentos -->
 <div data-role="page" id="alimentos">
 
 	<div data-role="header">
@@ -54,11 +54,12 @@
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page -->
-<!-- Start of third page -->
+
+<!-- Página de Recetas -->
 <div data-role="page" id="recetas">
 
 	<div data-role="header">
-		<a href="#" data-icon="add" class="ui-btn-left">Añadir</a>
+		<a href="#addReceta" data-icon="add" class="ui-btn-left">Añadir</a>
 		<h1>Recetas</h1>
 		<a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
 	</div><!-- /header -->
@@ -92,6 +93,33 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
+<!-- Página Añadir Receta -->
+<div data-role="page" id="addReceta">
+
+	<div data-role="header">
+		<a href="#recetas" data-icon="delete">Cancelar</a>
+		<h1>Añadir receta</h1>
+		<a href="#" data-icon="check" data-theme="b">Guardar</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<a href="#popupTitulo" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transitio="pop" data-icon="add" data-theme="b">Añadir título</a>
+		<div data-role="popup" id="popupTitulo" data-overlay-them="a" data-theme="c" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+			<div data-role="header" data-theme="a" class="ui-corner-top">
+				<h1>Añadir Título</h1>
+			</div>
+			<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+				<h3 class="ui-title">Escribe el nombre genérico de tu receta</h3>
+				<input type="text" name="titulo" id="titulo" value="">
+				<a href="#addReceta" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancelar</a>
+				<a href="#addReceta" data-role="button" data-inline="true" data-rel="back" data-transitioin="flow" data-theme="b">Guardar</a>
+			</div>
+		</div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page -->
 
 <script>
 function AppViewModel(){

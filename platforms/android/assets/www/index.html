@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Title</title>
+	<title>App Cart</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="js/knockout-2.3.0.js"></script>
 </head>
 <body>
 
-<!-- Start of first page -->
+<!-- Página Inicio-->
 <div data-role="page" id="inicio">
 
 	<div data-role="header">
@@ -21,7 +22,7 @@
 
 	<div data-role="content">
 		<a href="#alimentos" data-role="button" data-icon="arrow-r" data-iconpos="right">Recetas</a>
-		<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Menœs</a>
+		<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Menus</a>
 		<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">A Comprar!!</a>
 	</div><!-- /content -->
 
@@ -29,47 +30,47 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-<!-- Start of second page -->
+<!-- Página Familia de Alimentos -->
 <div data-role="page" id="alimentos">
 
 	<div data-role="header">
 		<h1>Alimentos</h1>
 		<a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
-		<a href="#inicio" data-back-btn-text="previous" class="ui-btn-left">Atr‡s</a>
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<ul data-role="listview" data-count-theme="c">
-			<li><a href="#recetas">Varios <span class="ui-li-count">1</span></a></li>
-		    <li><a href="#">Pasta <span class="ui-li-count">12</span></a></li>
-		    <li><a href="#">Arroces <span class="ui-li-count">0</span></a></li>
-		    <li><a href="#">Verduras <span class="ui-li-count">4</span></a></li>
-		    <li><a href="#">Carnes <span class="ui-li-count">328</span></a></li>
-		    <li><a href="#">Pescados <span class="ui-li-count">62</span></a></li>
+		<ul data-role="listview" data-count-theme="c" data-bind="foreach: alimentos">
+			<li><a href="#recetas"><span data-bind="text: NomAlimento"></span> <span class="ui-li-count" data-bind="text: ContAlimento"></span></a></li>
 		</ul>
 	</div><!-- /content -->
 
 	<div data-role="footer">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#inicio" class="ui-btn-active ui-state-persist" >Recetas</a></li>
+				<li><a href="#">Menus</a></li>
+				<li><a href="#">A Comprar!!</a></li>
+			</ul>
+		</div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page -->
-<!-- Start of third page -->
+
+<!-- Página de Recetas -->
 <div data-role="page" id="recetas">
 
 	<div data-role="header">
+		<a href="#addReceta" data-icon="add" class="ui-btn-left">Añadir</a>
 		<h1>Recetas</h1>
 		<a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
-		<a href="#alimentos" data-back-btn-text="previous" class="ui-btn-left">Atr‡s</a>
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="">
-			<li><a href="#">Albondigas con patatas</a></li>
-			<li><a href="#">Calamares en su tinta</a></li>
-			<li><a href="#">Cordero con Patatas</a></li>
-			<li><a href="#recetapopup" data-transition="slidedown"  data-inline="true" data-rel="popup">Pan con Tomate</a></li>
+		<ul data-role="listview" data-autodividers="true" data-filter="true" data-bind="foreach: recetas">
+			<li><a href="#" data-bind="text: NomRecetas"></a></li>
 		</ul>
 	</div><!-- /content -->
-	<div data-role="popup" id="recetapopup" class="ui-content" data-theme="d">
+	<div data-role="popup" id="recetapopup" class="ui-content" data-theme="a">
+	 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
     	<img src="img/pancontomate.jpg" style="width: 100px"/>
     	<small>La preparaci—n es super sencilla, simplemente con rebanadas 
                         preferiblemente de pan de payŽs (aunque puede prepararse con otras), 
@@ -82,10 +83,61 @@
 	</div>
 
 	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#alimentos" class="ui-btn-active ui-state-persist">Alimentos</a></li>
+				<li><a href="#">Menús</a></li>
+				<li><a href="#">A Comprar!!</a></li>
+			</ul>
+		</div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page -->
 
+<!-- Página Añadir Receta -->
+<div data-role="page" id="addReceta">
 
+	<div data-role="header">
+		<a href="#recetas" data-icon="delete">Cancelar</a>
+		<h1>Añadir receta</h1>
+		<a href="#" data-icon="check" data-theme="b">Guardar</a>
+	</div><!-- /header -->
 
+	<div data-role="content">
+		<a href="#popupTitulo" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transitio="pop" data-icon="add" data-theme="b">Añadir título</a>
+		<div data-role="popup" id="popupTitulo" data-overlay-them="a" data-theme="c" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+			<div data-role="header" data-theme="a" class="ui-corner-top">
+				<h1>Añadir Título</h1>
+			</div>
+			<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+				<h3 class="ui-title">Escribe el nombre genérico de tu receta</h3>
+				<input type="text" name="titulo" id="titulo" value="">
+				<a href="#addReceta" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancelar</a>
+				<a href="#addReceta" data-role="button" data-inline="true" data-rel="back" data-transitioin="flow" data-theme="b">Guardar</a>
+			</div>
+		</div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<script>
+function AppViewModel(){
+	var self = this;
+	
+	self.alimentos = ko.observableArray([
+		{NomAlimento: "Varios", ContAlimento: "1"},
+		{NomAlimento: "Cereales", ContAlimento: "1"},
+		{NomAlimento: "Pasta", ContAlimento: "5"},
+		{NomAlimento: "Carnes", ContAlimento: "3"}
+	]);
+	
+	self.recetas = ko.observableArray([
+		{NomRecetas: "Pan con Tomate" }
+	]);
+}
+
+ko.applyBindings(new AppViewModel());
+</script>
 </body>
 </html>
